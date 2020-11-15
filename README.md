@@ -1,6 +1,5 @@
-# Pensieve
-Pensieve is a system that generates adaptive bitrate algorithms using reinforcement learning.
-http://web.mit.edu/pensieve/
+# NANCY-FFE
+Implemented the Follow then Forage method for increased exploration in the Asynchronous Advantage Actor-Critic (A3C) Network that Pensieve employs.
 
 ### Prerequisites
 - Install prerequisites (tested with Ubuntu 16.04, Tensorflow v1.1.0, TFLearn v0.3.1 and Selenium v2.39.0)
@@ -9,9 +8,9 @@ python setup.py
 ```
 
 ### Training
-- To train a new model, put training data in `sim/cooked_traces` and testing data in `sim/cooked_test_traces`, then in `sim/` run `python get_video_sizes.py` and then run
+- To train a new NANCY FFE model, put training data in `sim/cooked_traces` and testing data in `sim/cooked_test_traces`, then in `sim/` run `python get_video_sizes.py` and then run
 ```
-python multi_agent.py
+python multi_agent_ffe.py
 ```
 
 The reward signal and meta-setting of video can be modified in `multi_agent.py` and `env.py`. More details can be found in `sim/README.md`.
